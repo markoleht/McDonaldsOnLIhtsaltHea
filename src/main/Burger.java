@@ -1,25 +1,25 @@
-package org.thoughts.on.java.burger;
 
 public class Burger {
 
-	private MeatSelection selection;
-	
-	private double quantity;
+    private String Name;
+    private String Meat;
+    private double Price;
+    private String BreadType;
 
-	public Burger(MeatSelection selection, double quantity) {
-		this.selection = selection;
-		this.quantity = quantity;
-	}
-	
-	public MeatSelection getSelection() {
-		return selection;
-	}
+    public Burger(String Name, String Meat, double Price, String BreadType) {
+        this.Name = Name;
+        this.Meat = Meat;
+        this.BreadType = BreadType;
+        this.Price = Price;
+    }
+    public String getName() {
+        return Name;
+    }
+    public double getPrice() {
+        return Price;
+    }
+    public String toString() {
+        return "Burger: " + Name + " Price: " + Price + " Meat: " + Meat + " Bread: " + BreadType;
+    }
 
-	public double getQuantity() {
-		return quantity;
-	}
-
-	public void setQuantity(double quantity) {
-		this.quantity = quantity;
-	}
 }
